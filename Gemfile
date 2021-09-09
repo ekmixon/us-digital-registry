@@ -96,7 +96,7 @@ group :development, :test do
 
   # nice debug tools
   # gem 'jazz_hands', github: 'nixme/jazz_hands', branch: 'bring-your-own-debugger'
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
   gem 'binding_of_caller'
   gem 'pry'
 

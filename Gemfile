@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 #ruby ENV['RUBY_VERSION']
 
 # Rails
-gem 'rails', '5.2'
+gem 'rails', '5.2.4.3'
 
 # DB Connector
 gem 'mysql2', '0.4.10'
@@ -14,10 +14,10 @@ gem "koala" #facebook
 
 # Templates for generating JSON and other data output
 gem 'json'
-gem 'jbuilder'
+gem 'jbuilder', '>= 2.9.1'
 
 # Public activity
-gem 'public_activity'
+gem 'public_activity', '>= 1.6.4'
 
 # Makes nested forms easier
 gem 'cocoon'
@@ -30,16 +30,16 @@ gem "selectize-rails"
 gem 'to_regexp'
 
 # Devise does user authentication mechanisms for us
-gem "devise"
+gem "devise", ">= 4.7.1"
 # Integrate devise with a CAS service (here we use OMB Max)
 # gem 'devise_cas_authenticatable'
 gem 'omniauth_login_dot_gov', :git => 'https://github.com/ctacdev/omniauth_login_dot_gov.git', :ref => '456ad85'
 
 # Tagging support
-gem 'acts-as-taggable-on'
+gem 'acts-as-taggable-on', '>= 6.5.0'
 
 # Pagination
-gem 'kaminari'
+gem 'kaminari', '>= 1.1.1'
 
 # Rack CORS. Prevents need to do this in application controller, lets us do it for public directory
 gem 'rack-cors', :require => 'rack/cors'
@@ -56,20 +56,20 @@ gem 'elasticsearch-rails', '5.1.0'
 # Assets / Assets related gems
 ######
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
+  gem 'sass-rails', '>= 6.0.0'
+  gem 'coffee-rails', '>= 5.0.0'
   gem 'uglifier'
 end
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', '>= 4.7.0.5'
 
 # can remove all of these if we get rid of the 
 gem 'bootstrap-sass', '~> 3.3.3'
-gem 'morrisjs-rails'
+gem 'morrisjs-rails', '>= 0.5.1.2'
 gem 'raphael-rails'
-gem "jqcloud-rails"
+gem "jqcloud-rails", ">= 1.0.0"
 # end remove old files
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.5'
 gem 'jquery-tokeninput-rails'
 gem "non-stupid-digest-assets"
 
@@ -83,14 +83,14 @@ gem "non-stupid-digest-assets"
 group :development, :test do
 
   # testing gems
-  gem 'rspec-rails', '~> 3.0'
-  gem 'factory_bot'
+  gem 'rspec-rails', '~> 3.9', '>= 3.9.0'
+  gem 'factory_bot', '>= 5.1.1'
   gem 'coveralls'
   gem "capybara" #feature specs
   gem 'database_cleaner'
   gem 'guard-rspec', require: false
 
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', '>= 4.1.2'
   # generate fake data in tests & seeds files
   gem 'faker'
 

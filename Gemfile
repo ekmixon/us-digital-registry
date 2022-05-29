@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 #ruby ENV['RUBY_VERSION']
 
 # Rails
-gem 'rails', '5.2'
+gem 'rails', '5.2.0'
 
 # DB Connector
 gem 'mysql2', '0.4.10'
@@ -83,7 +83,7 @@ gem "non-stupid-digest-assets"
 group :development, :test do
 
   # testing gems
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 3.9', '>= 3.9.0'
   gem 'factory_bot'
   gem 'coveralls'
   gem "capybara" #feature specs

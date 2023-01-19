@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 #ruby ENV['RUBY_VERSION']
 
 # Rails
-gem 'rails', '5.2'
+gem 'rails', '6.1.7.1'
 
 # DB Connector
 gem 'mysql2', '0.4.10'
@@ -36,7 +36,7 @@ gem "devise"
 gem 'omniauth_login_dot_gov', :git => 'https://github.com/ctacdev/omniauth_login_dot_gov.git', :ref => '456ad85'
 
 # Tagging support
-gem 'acts-as-taggable-on'
+gem 'acts-as-taggable-on', '>= 7.0.0'
 
 # Pagination
 gem 'kaminari'
@@ -60,11 +60,11 @@ group :assets do
   gem 'coffee-rails'
   gem 'uglifier'
 end
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', '>= 4.7.0.6'
 
 # can remove all of these if we get rid of the 
 gem 'bootstrap-sass', '~> 3.3.3'
-gem 'morrisjs-rails'
+gem 'morrisjs-rails', '>= 0.5.1.3'
 gem 'raphael-rails'
 gem "jqcloud-rails"
 # end remove old files
@@ -83,7 +83,7 @@ gem "non-stupid-digest-assets"
 group :development, :test do
 
   # testing gems
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 3.9', '>= 3.9.0'
   gem 'factory_bot'
   gem 'coveralls'
   gem "capybara" #feature specs

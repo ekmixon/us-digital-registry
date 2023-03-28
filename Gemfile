@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 #ruby ENV['RUBY_VERSION']
 
 # Rails
-gem 'rails', '5.2'
+gem 'rails', '6.1.7.3'
 
 # DB Connector
 gem 'mysql2', '0.4.10'

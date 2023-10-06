@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 #ruby ENV['RUBY_VERSION']
 
 # Rails
-gem 'rails', '5.2'
+gem 'rails', '7.1.0'
 
 # DB Connector
 gem 'mysql2', '0.4.10'
@@ -17,7 +17,7 @@ gem 'json'
 gem 'jbuilder'
 
 # Public activity
-gem 'public_activity'
+gem 'public_activity', '>= 2.0.0'
 
 # Makes nested forms easier
 gem 'cocoon'
@@ -30,7 +30,7 @@ gem "selectize-rails"
 gem 'to_regexp'
 
 # Devise does user authentication mechanisms for us
-gem "devise"
+gem "devise", ">= 4.7.2"
 # Integrate devise with a CAS service (here we use OMB Max)
 # gem 'devise_cas_authenticatable'
 gem 'omniauth_login_dot_gov', :git => 'https://github.com/ctacdev/omniauth_login_dot_gov.git', :ref => '456ad85'
@@ -60,7 +60,7 @@ group :assets do
   gem 'coffee-rails'
   gem 'uglifier'
 end
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', '>= 4.7.0.8'
 
 # can remove all of these if we get rid of the 
 gem 'bootstrap-sass', '~> 3.3.3'
@@ -69,7 +69,7 @@ gem 'raphael-rails'
 gem "jqcloud-rails"
 # end remove old files
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 gem 'jquery-tokeninput-rails'
 gem "non-stupid-digest-assets"
 
@@ -83,7 +83,7 @@ gem "non-stupid-digest-assets"
 group :development, :test do
 
   # testing gems
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 3.9', '>= 3.9.1'
   gem 'factory_bot'
   gem 'coveralls'
   gem "capybara" #feature specs

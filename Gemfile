@@ -71,7 +71,7 @@ gem "jqcloud-rails"
 
 gem 'jquery-rails'
 gem 'jquery-tokeninput-rails'
-gem "non-stupid-digest-assets"
+gem "non-stupid-digest-assets", ">= 1.0.10"
 
 ######
 # End Assets / Assets related gems

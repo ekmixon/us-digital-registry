@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 #ruby ENV['RUBY_VERSION']
 
 # Rails
-gem 'rails', '5.2'
+gem 'rails', '7.1.5.2'
 
 # DB Connector
 gem 'mysql2', '0.4.10'
@@ -17,7 +17,7 @@ gem 'json'
 gem 'jbuilder'
 
 # Public activity
-gem 'public_activity'
+gem 'public_activity', '>= 2.0.0'
 
 # Makes nested forms easier
 gem 'cocoon'
@@ -36,10 +36,10 @@ gem "devise"
 gem 'omniauth_login_dot_gov', :git => 'https://github.com/ctacdev/omniauth_login_dot_gov.git', :ref => '456ad85'
 
 # Tagging support
-gem 'acts-as-taggable-on'
+gem 'acts-as-taggable-on', '>= 10.0.0'
 
 # Pagination
-gem 'kaminari'
+gem 'kaminari', '>= 1.2.0'
 
 # Rack CORS. Prevents need to do this in application controller, lets us do it for public directory
 gem 'rack-cors', :require => 'rack/cors'
